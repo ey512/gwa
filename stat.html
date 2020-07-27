@@ -1,1 +1,81 @@
-eval(function(p,a,c,k,e,r){e=function(c){return(c<62?'':e(parseInt(c/62)))+((c=c%62)>35?String.fromCharCode(c+29):c.toString(36))};if('0'.replace(0,e)==0){while(c--)r[e(c)]=k[c];k=[function(e){return r[e]||e}];e=function(){return'[2-79b-oq-uwyzA-M]'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('<!DOCTYPE l><l><u><w charset="utf-8"><w name="viewport"content="initial-y=1.0, maximum-y=1.0, user-scalable=no"/><z>THE GREAT WALL</z><q r="A"m="h/h.h"/><q r="A"m="h/responsive.h"/><q r="B"9="image/x-B"m=\'img/favicon.ico\'/><3 9="b/c"d="4/jquery.4"></3><3 9="b/c"d="C/C.4"></3><3 9="b/c"d="4/vue.4"></3><3 9="b/c"d="4/global.4"></3><3 9="b/c"d="4/data.4"></3><3 9="b/c"d="4/web3.D.4"></3><3 9="b/c"d="4/clipboard.D.4.4"></3></u><E><2 id="app"v-cloak><!--F start--><2 5="F"><2 5="G"><2 5="nav_btn"@s="getNavs"><6></6><6></6><6></6></2><2 5="nav"><g><7 v-H="(n,o) I J"@s="K(o)">{{n}}</7></g></2><2 5="nav_mobile"v-show="showNav"><2 5="bg"><g><7 v-H="(n,o) I J"@s="K(o)">{{n}}</7></g></2></2></2></2><2 5="block_box block_common"><2 5="G"><L 5="common_sub_title mb20 common_title">{{e.i.dynamic_income}}</L><2 5="block_list"><2 5="block_item i"><2 5="item_box"><2 5="common_box"><2 5="common_item"><p>{{e.t.team_node}}：{{f.M}}<a m="friends.l"v-if="f.M>0"><6 5="look-more">{{e.com.lookMore}}</6></a></p><p>{{e.t.large_area}}：{{f.bigAreaIncome|j}}k</p><p>{{e.t.small_area}}：{{f.smallAreaIncome|j}}k</p></2></2></2><g><7><6>{{f.recommendIncome|j}}k</6>{{e.i.Bonus_income}}</7><7><6>{{f.levelIncome|j}}k</6>{{e.i.level_income}}</7><7><6>{{f.rankIncome|j}}k</6>{{e.i.rank_income}}</7></g></2></2></2></2></2><3 9="b/c "d="4/stat.4 "></3></E></l>',[],49,'||div|script|js|class|span|li||type||text|javascript|src|langItem|userData|ul|css|income|numFilter|ETH|html|href|value|index||link|rel|click|statistics|head||meta||scale|title|stylesheet|icon|lang|min|body|statisticsTop|container|for|in|langList|changeLang|h3|recommend_num'.split('|'),0,{}))
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>THE GREAT WALL</title>
+		<link rel="stylesheet" href="css/css.css" />
+		<link rel="stylesheet" href="css/responsive.css" />
+		<link rel="icon" type="image/x-icon" href='img/favicon.ico' />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="lang/lang.js"></script>
+		<script type="text/javascript" src="js/vue.js"></script>
+		<script type="text/javascript" src="js/global.js"></script>
+		<script type="text/javascript" src="js/data.js"></script>
+		<script type="text/javascript" src="js/web3.min.js"></script>
+		<script type="text/javascript" src="js/clipboard.min.js.js"></script>
+	</head>
+
+	<body>
+		<div id="app" v-cloak>
+			<!--statisticsTop start-->
+			<div class="statisticsTop">
+				<div class="container">
+					<div class="nav_btn" @click="getNavs">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="nav">
+						<ul>
+							<li v-for="(value,index) in langList" @click="changeLang(index)">{{value}}</li>
+						</ul>
+					</div>
+
+					<div class="nav_mobile" v-show="showNav">
+						<div class="bg">
+							<ul>
+								<li v-for="(value,index) in langList" @click="changeLang(index)">{{value}}</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="block_box block_common">
+				<div class="container">
+					<h3 class="common_sub_title mb20 common_title">
+						{{langItem.income.dynamic_income}}
+					</h3>
+
+					<div class="block_list">
+						
+						<div class="block_item income">
+														
+							<div class="item_box">
+								<div class="common_box">
+									<div class="common_item">
+										<p>{{langItem.statistics.team_node}}：{{userData.recommend_num}} <a href="friends.html" v-if="userData.recommend_num>0"><span class="look-more">{{langItem.com.lookMore}}</span></a></p>
+										<p>{{langItem.statistics.large_area}}：{{userData.bigAreaIncome | numFilter}} ETH</p>
+										<p>{{langItem.statistics.small_area}}：{{userData.smallAreaIncome | numFilter}} ETH</p>
+									</div>
+								</div>
+							</div>
+					          
+							<ul>
+								<li><span>{{userData.recommendIncome | numFilter}} ETH</span>{{langItem.income.Bonus_income}}</li>
+								<li><span>{{userData.levelIncome | numFilter}} ETH</span>{{langItem.income.level_income}}</li>
+								<li><span>{{userData.rankIncome | numFilter}} ETH</span>{{langItem.income.rank_income}}</li>
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+
+			</div>			
+		</div>
+		<script type="text/javascript " src="js/stat.js "></script>
+
+	</body>
+
+</html>
