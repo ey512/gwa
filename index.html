@@ -1,1 +1,300 @@
-eval(function(p,a,c,k,e,r){e=function(c){return(c<62?'':e(parseInt(c/62)))+((c=c%62)>35?String.fromCharCode(c+29):c.toString(36))};if('0'.replace(0,e)==0){while(c--)r[e(c)]=k[c];k=[function(e){return r[e]||e}];e=function(){return'([5-7b-oq-uwyzA-UWYZ]|[12]\\w)'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('<!DOCTYPE N><N><1t><O charset="utf-8"><O name="viewport"Z="initial-1u=1.0, maximum-1u=1.0, user-scalable=J"/><O 1e-1f="Pragma"Z="J-1g"><O 1e-1f="1v-control"Z="J-1g"><O 1e-1f="1v"Z="J-1g"><f>THE GREAT WALL</f><1h 1i="1w"K="P/P.P"/><1h 1i="1w"K="P/responsive.P"/><1h 1i="1x"r="image/x-1x"K=\'1j/favicon.ico\'/><k r="D/z"A="l/jquery.l"></k><k r="D/z"A="1y/1y.l"></k><k r="D/z"A="l/vue.l"></k><k r="D/z"A="l/global.l"></k><k r="D/z"A="l/1z.l"></k><k r="D/z"A="l/web3.1A.l?v=123"></k><k r="D/z"A="l/1B.1A.l.l"></k></1t><1C><5 L="1D"6="page"v-cloak><5 6="1k"><!--1k 1l--><5 6="Q"><5 6="nav_btn"@s="getNavs"><b></b><b></b><b></b></5><5 6="nav"><n><c v-R="(w,t) S 1E"@s="1F(t)">{{w}}</c></n></5><5 6="nav_mobile"v-o="showNav"><5 6="bg"><n><c v-R="(w,t) S 1E"@s="1F(t)">{{w}}</c></n></5></5><5 6="1G"><1j A="1j/1G-new.png"></5></5></5><!--1k end--><5 6="d 10"><!--d 1l--><5 6="Q"><q 6="1H 11"><b>{{7.d.f}}</b></q><5 6="common_intro game_intro">{{7.d.intro}}</5><5 6="game_time"><5 6="1I">{{7.d.1I}}</5><5 6="time"L="o"></5><!--<5 6="12">{{i.1J|j}}m</5>--><5 6="12">{{i.1J}}m</5><!--<5 6="1K"@s="showPop(\'13\')">{{7.d.viewHistory}}</5>--></5><5 6="14 15 T"><!--<5 6="f-g-U"><b 6="f-b">{{7.d.T}}</b></5>--><5 6="W"></5><!--T 1l--><5 6="f-g-U"><b 6="f-b">{{7.e.1L}}</b></5><5 6="16"><5 6="1M"><5 6="E">{{7.e.nowStage}}：{{7.e.angelFund}}，{{I.totalGwaLevel}}，1ETH={{I.gwaPrice}}B</5><5 6="E">{{7.e.nowRemaining}}：{{I.totalGwa}}B</5></5><5 6="1N"><5 6="1O"><1m L="gwaCount"r="12"v-1P.1Q="1R"v-on:1m="joinNumberUp()"/></5><b>m</b><5 6="E">{{7.e.1L}}：<F>{{totalV|j}}</F>B</5><5 6="E">{{7.e.1n}}：<F>{{gwaBalance|j}}</F>B</5><5 6="E">{{7.e.E}}：<F>{{1n|j}}</F>m</5></5></5><5 6="17"style="margin-bottom: 20px;"><G @s="18(1R,1)"6="19 1a">{{7.d.1a}}</G></5></5></5></5><5 6="T 10"><5 6="Q"><q 6="1H 11"><b>{{7.d.join_now}}</b></q><5 6="14 15"><5 6="f-g-U"><b 6="f-b">{{7.d.T}}</b></5><5 6="W"></5><5 6="16"><5 6="1M"><n><c v-R="(1o,t) S 1S.joinItemNew":6="1p==1o ?\'cur\':\'\'"@s="getJoinNew(1o)">{{t}}</c></n><5 6="W"></5></5><5 6="1N"><5 6="1O"><1m r="12"v-1P.1Q="1p"1T="1T"/></5><b>m</b><5 6="E">{{7.e.E}}：<F>{{1n|j}}</F>m</5></5><5 6="17"><G @s="18(1p,2)"6="19 1a">{{7.d.1a}}</G></5></5></5><5 6="14 15"><5 6="f-g-U"><b 6="f-b">{{7.d.1U}}</b></5><5 6="W"></5><5 6="16"><5 6="1U"><n><c>{{7.d.my_share}}：{{I.pid}}</c><c>{{7.d.share_count}}：{{I.recommend_num}}</c><c>{{7.d.invite_link}}：<b L="1V">{{getLink}}</b></c><c>{{7.d.myID}}：{{I.L}}</c><c>{{7.d.myAddress}}：{{I.addr}}</c></n></5><5 6="17"><G @s="1b"6="19 1b"1z-1B-target="#1V">{{7.d.1b}}</G></5></5></5><5 6="14 15 1W"><5 6="f-g-U"><b 6="f-b">{{7.d.1W}}</b></5><5 6="W"></5><5 6="16"><5 6="rules"><q 6="rules_title">{{7.d.rule_title}}</q><5 6="rule_text">{{7.d.rule_intro}}</5></5></5></5></5></5><5 6="1X Y 10"><5 6="Q"><q 6="11 1Y"><b>{{7.y.f}}</b></q><5 6="1Z"><5 6="20 21"><n><c><b 6="Y-J">{{7.y.rank_title}}</b><b 6="Y-1q">{{7.y.ac_title}}</b><b 6="22 23">{{7.y.L}}</b></c><c v-R="(1r,t) S rankArr"><b 6="Y-J">{{t+1>9?t+1:(t+1)}}</b><b 6="Y-1q">{{1r.1q|j}}m</b><b 6="22 23">{{1r.user_id}}</b></c></n></5></5><5 6="17"><a K="rankList.N"><G 6="19 1b">{{7.e.lookYesterdayRank}}</G></a></5></5></5><5 6="1X 10"><5 6="Q"><q 6="11 1Y"><b>{{7.M.M}}</b></q><5 6="1Z"><5 6="20 C"><5 6="24"><b>{{7.M.24}}：V{{i.level}}</b></5><5 6="item_box 21"><5 6="common_box"><5 6="25"><h4 6="26">{{7.C.unsettled_income}}</h4><p>m：{{i.27|j}}</p><p>B：{{i.28|j}}</p><p 6="29"v-if="i.27 > 0 || i.28 >0"@s="18(0,3)"><b>{{7.C.settle}}</b></p></5><5 6="25"><h4 6="26">{{7.C.gameReward_income}}</h4><p>m：{{i.2a|j}}</p><p>B：{{i.2b|j}}</p><p 6="29"v-if="i.2a>0 || i.2b >0"@s="18(0,4)"><b>{{7.C.gameReward}}</b></p></5></5></5><n><c><b>{{i.staticIncome|j}}m</b>{{7.C.static_income}}</c><c><b>{{i.dynamicIncome|j}}m</b>{{7.C.dynamic_income}}</c><c><b>{{i.settlementEth|j}}m，{{i.settlementGwa|j}}B</b>{{7.C.total_settled}}</c><c><b>{{i.surplusMoney|j}}m</b>{{7.C.limit_income}}</c><c><b>{{i.sellToken|j}}B</b>{{7.M.ticket_sales}}</c><c><b>{{i.burnToken|j}}B</b>{{7.M.burn_down}}</c><c><b>{{i.todayEth|j}}m</b>{{7.M.today_eth}}</c></n><5 6="view_btn"><a K="stat.N">{{7.e.viewDetail}}</a></5></5></5></5></5><5 6="modal"v-o="13"><5 6="modal_dialog"><5 6="modal_content"><q 6="modal_title">{{7.d.13}}</q><5 6="history_box"><n><c v-R="(w,t) S 1S.1K"><q>{{7.e.the}}{{w.times}}{{7.e.period}}</q>{{7.d.prizePool}}：{{w.pool}}m<br/><b v-if="w.winnerID==0"6="red">{{7.d.noWinner}}</b><b v-else>{{7.d.2c}}：{{w.2c}}，{{7.d.2d}}{{w.2d}}m</b></c></n></5><a K="z:void(0)"6="modal_close"@s="hidePop(\'13\')">X</a></5></5></5><!--<h-g v-o="directRules":f="7.y.share_title":u="7.y.share_rule"></h-g><h-g v-o="smallRules":f="7.y.group_title":u="7.y.group_rule"></h-g>--><!--<h-g v-o="seasonRules":f="7.y.buy_title":u="7.y.season_rule"></h-g>--><h-g v-o="countError":f="7.e.H":u="7.e.count_error"></h-g><h-g v-o="sendError":f="7.e.H":u="7.e.send_error"></h-g><!--<h-g v-o="1d":f="7.e.H":u="7.e.1d"></h-g>--><h-g v-o="2e":f="7.e.H":u="7.e.2e"></h-g><h-g v-o="2f":f="7.e.H":u="7.e.2f"></h-g><h-g v-o="2g":f="7.e.H":u="7.d.2g"></h-g><h-g v-o="2h":f="7.e.H":u="7.e.2h"></h-g><h-2i v-o="1d":f="7.e.H":u="7.e.1d":codes="lotteryCount"></h-2i></5><k r="D/z "A="l/1D.l"></k></1C></N>',[],143,'|||||div|class|langItem||||span|li|game|com|title|box|pop|userData|numFilter|script|js|ETH|ul|show||h3|type|click|index|message||value||ranking|javascript|src|GWA|income|text|balance|em|button|tip|linkData|no|href|id|statistics|html|meta|css|container|for|in|join|two||clear||rank|content|block_common|common_title|number|gameHistory|tab|join_tab|tab_box|sub_btn|transferEth|btn|buy|copy||lotteryError|http|equiv|cache|link|rel|img|header|start|input|tokenBalance|val|joinNumberNew|money|rankitem||head|scale|Cache|stylesheet|icon|lang|data|min|clipboard|body|app|langList|changeLang|logo|game_title|countdown|futureEth|history|balanceToken|item|form_box|input_box|model|numbe|joinNumber|gameData|disabled|invite|foo|rule|block_box|three|block_list|block_item|rank_bg|topView|idCss|my_level|common_item|fbold|noSettlementEth|noSettlementGwa|btns|withdrawalEth|withdrawalGwa|winner|get|copySuccess|balanceError|canPlay|sdfBalanceError|lotto'.split('|'),0,{}))
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-control" content="no-cache">
+		<meta http-equiv="Cache" content="no-cache">
+		<title>THE GREAT WALL</title>
+		<link rel="stylesheet" href="css/css.css" />
+		<link rel="stylesheet" href="css/responsive.css" />
+		<link rel="icon" type="image/x-icon" href='img/favicon.ico' />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="lang/lang.js"></script>
+		<script type="text/javascript" src="js/vue.js"></script>
+		<script type="text/javascript" src="js/global.js"></script>
+		<script type="text/javascript" src="js/data.js"></script>
+		<script type="text/javascript" src="js/web3.min.js?v=123"></script>
+		<script type="text/javascript" src="js/clipboard.min.js.js"></script>	
+        
+		
+	</head>
+
+	<body>
+		<div id="app" class="page" v-cloak>
+
+			<div class="header"><!--header start-->
+				
+				<div class="container">
+					<div class="nav_btn" @click="getNavs">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+
+					<div class="nav">
+						<ul>
+							<li v-for="(value,index) in langList" @click="changeLang(index)">{{value}}</li>
+						</ul>
+					</div>
+
+					<div class="nav_mobile" v-show="showNav">
+						<div class="bg">
+							<ul>
+								<li v-for="(value,index) in langList" @click="changeLang(index)">{{value}}</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="logo"><img src="img/logo-new.png"></div>
+
+				</div>
+
+			</div>
+			<!--header end-->
+
+			<div class="game block_common"><!--game start-->
+				
+				<div class="container">
+					<h3 class="game_title common_title"><span>{{langItem.game.title}}</span></h3>
+
+					<div class="common_intro game_intro">{{langItem.game.intro}}</div>
+
+					<div class="game_time">
+						<div class="countdown">{{langItem.game.countdown}}</div>
+						<div class="time" id="show"></div>
+						<!-- <div class="number">{{userData.futureEth | numFilter}} ETH</div> -->
+						<div class="number">{{userData.futureEth}} ETH</div>
+						<!-- <div class="history" @click="showPop('gameHistory')">{{langItem.game.viewHistory}}</div> -->
+					</div>
+					<div class="tab join_tab join">
+						<!-- <div class="title-box-two">
+							<span class="title-span">
+								{{langItem.game.join}}
+							</span>
+						</div> -->
+						<div class="clear"></div>
+							<!--join start-->
+					
+							<div class="title-box-two">
+								<span class="title-span">
+									{{langItem.com.balanceToken}}
+								</span>
+							</div>
+							<div class="tab_box">
+								<div class="item">
+									<div class="balance">
+									{{langItem.com.nowStage}}：{{langItem.com.angelFund}}，{{linkData.totalGwaLevel}}，1ETH={{linkData.gwaPrice}} GWA
+									</div>
+									<div class="balance">
+									{{langItem.com.nowRemaining}}：{{linkData.totalGwa}} GWA
+									</div>
+								</div>
+							
+								<div class="form_box">
+									<div class="input_box"><input id="gwaCount" type="number" v-model.numbe="joinNumber" v-on:input="joinNumberUp()"/></div>
+									<span>ETH</span>
+									<div class="balance">{{langItem.com.balanceToken}}：<em>{{totalV | numFilter}}</em> GWA</div>
+									<div class="balance">{{langItem.com.tokenBalance}}：<em>{{gwaBalance | numFilter}}</em> GWA</div>
+									<div class="balance">{{langItem.com.balance}}：<em>{{tokenBalance | numFilter}}</em> ETH</div>
+								</div>
+							</div>
+							<div class="sub_btn" style="margin-bottom: 20px;"><button @click="transferEth(joinNumber,1)" class="btn buy">{{langItem.game.buy}}</button></div>
+						
+					</div>
+				</div>
+			</div>
+       
+			<div class="join block_common">
+				<div class="container">
+					<h3 class="game_title common_title"><span>{{langItem.game.join_now}}</span></h3>
+					
+					<div class="tab join_tab">
+
+						<div class="title-box-two">
+							<span class="title-span">
+								{{langItem.game.join}}
+							</span>
+						</div>
+						<div class="clear"></div>
+						
+						<div class="tab_box">
+
+							<div class="item">
+								<ul>
+									<li v-for="(val,index) in gameData.joinItemNew" :class="joinNumberNew==val ?'cur':''" @click="getJoinNew(val)">{{index}}</li>
+								</ul>
+								<div class="clear"></div>
+							</div>
+
+							<div class="form_box">
+								<div class="input_box"><input type="number" v-model.numbe="joinNumberNew" disabled="disabled"/></div>
+								<span>ETH</span>
+								<div class="balance">{{langItem.com.balance}}：<em>{{tokenBalance | numFilter}}</em> ETH</div>
+							</div>
+							<div class="sub_btn"><button @click="transferEth(joinNumberNew,2)" class="btn buy">{{langItem.game.buy}}</button></div>
+						</div>
+					</div>
+					
+					<div class="tab join_tab">
+						<div class="title-box-two">
+							<span class="title-span">
+								{{langItem.game.invite}}
+							</span>
+						</div>
+						<div class="clear"></div>
+						<div class="tab_box">
+							<div class="invite">
+								<ul>
+									<li>{{langItem.game.my_share}}：{{linkData.pid}}</li>
+									<li>{{langItem.game.share_count}}：{{linkData.recommend_num}}</li>
+									<li>{{langItem.game.invite_link}}：
+										<span id="foo">
+					                      {{getLink}}
+										</span>
+									</li>
+									<li>{{langItem.game.myID}}：{{linkData.id}}</li>
+									<li>{{langItem.game.myAddress}}：{{linkData.addr}}</li>
+								</ul>
+							</div>
+							<div class="sub_btn"><button @click="copy" class="btn copy" data-clipboard-target="#foo">{{langItem.game.copy}}</button></div>
+						</div>
+					</div>
+					
+					<div class="tab join_tab rule">
+						<div class="title-box-two">
+							<span class="title-span">
+								{{langItem.game.rule}}
+							</span>
+						</div>
+						<div class="clear"></div>
+						<div class="tab_box">
+							<div class="rules">
+								<h3 class="rules_title">{{langItem.game.rule_title}}</h3>
+								<div class="rule_text">{{langItem.game.rule_intro}}</div>
+							</div>
+						</div>
+					
+					</div>
+				</div>
+			</div>
+            <div class="block_box rank block_common">
+				<div class="container">
+					<h3 class="common_title three"><span>{{langItem.ranking.title}}</span></h3>
+					<div class="block_list">
+						<div class="block_item rank_bg">
+							<ul>
+								<li>
+									<span class="rank-no">
+										{{langItem.ranking.rank_title}}
+									</span>
+									<span class="rank-money">
+										{{langItem.ranking.ac_title}}
+									</span>
+									<span class="topView idCss">
+										{{langItem.ranking.id}}
+									</span>
+								</li>
+								<li v-for="(rankitem,index) in rankArr">
+									<span class="rank-no">
+										{{index+1>9?index+1:(index+1)}}
+									</span>
+									<span class="rank-money">
+										{{rankitem.money | numFilter}} ETH
+									</span>
+									<span class="topView idCss">
+										{{rankitem.user_id}}
+									</span>
+								</li>
+							</ul>						
+						</div>	
+					</div>
+					<div class="sub_btn"><a href="rankList.html"><button class="btn copy">{{langItem.com.lookYesterdayRank}}</button></a></div>
+				</div>
+			</div>
+			<div class="block_box block_common">
+				<div class="container">
+					<h3 class="common_title three"><span>{{langItem.statistics.statistics}}</span></h3>
+					<div class="block_list">						
+						<div class="block_item income">
+							
+							<div class="my_level">
+								<span>{{langItem.statistics.my_level}}：V{{userData.level}}  
+				
+								</span>
+							</div>
+							<div class="item_box rank_bg">
+								<div class="common_box">								
+									<div class="common_item">
+										<h4 class="fbold">{{langItem.income.unsettled_income}}</h4>
+										<p>ETH：{{userData.noSettlementEth | numFilter}}</p>
+										<p>GWA：{{userData.noSettlementGwa | numFilter}}</p>
+										<p class="btns" v-if="userData.noSettlementEth > 0 || userData.noSettlementGwa >0" @click="transferEth(0,3)"><span>{{langItem.income.settle}}</span></p>
+									</div>
+									<div class="common_item">
+										<h4 class="fbold">{{langItem.income.gameReward_income}}</h4>
+										<p>ETH：{{userData.withdrawalEth | numFilter}}</p>
+										<p>GWA：{{userData.withdrawalGwa | numFilter}}</p>
+										<p class="btns" v-if="userData.withdrawalEth>0 || userData.withdrawalGwa >0" @click="transferEth(0,4)">
+											<span>{{langItem.income.gameReward}}</span>
+										</p>
+									</div>
+								</div>
+							</div>
+							<ul>
+								<li><span>{{userData.staticIncome | numFilter}} ETH</span>{{langItem.income.static_income}}</li>
+								<li><span>{{userData.dynamicIncome | numFilter}} ETH</span>{{langItem.income.dynamic_income}}</li>
+								<li><span>{{userData.settlementEth | numFilter}} ETH，{{userData.settlementGwa | numFilter}} GWA</span>{{langItem.income.total_settled}}</li>
+								<li><span>{{userData.surplusMoney | numFilter}} ETH</span>{{langItem.income.limit_income}}</li>
+								<li><span>{{userData.sellToken | numFilter}} GWA</span>{{langItem.statistics.ticket_sales}}</li>
+								<li><span>{{userData.burnToken | numFilter}} GWA</span>{{langItem.statistics.burn_down}}</li>
+								<li><span>{{userData.todayEth | numFilter}} ETH</span>{{langItem.statistics.today_eth}}</li>
+							</ul>
+							
+							<div class="view_btn"><a href="stat.html">{{langItem.com.viewDetail}}</a></div>
+						</div>
+						
+					</div>
+				</div>
+
+			</div>
+
+			<div class="modal" v-show="gameHistory">
+				<div class="modal_dialog">
+					<div class="modal_content">
+						<h3 class="modal_title">{{langItem.game.gameHistory}}</h3>
+						<div class="history_box">
+							<ul>
+								<li v-for="(value,index) in gameData.history">
+									<h3>{{langItem.com.the}} {{value.times}} {{langItem.com.period}}</h3> {{langItem.game.prizePool}}：{{value.pool}} ETH<br />
+									<span v-if="value.winnerID==0" class="red">{{langItem.game.noWinner}}</span>
+									<span v-else>{{langItem.game.winner}}：{{value.winner}}，{{langItem.game.get}} {{value.get}} ETH</span>
+								</li>
+
+							</ul>
+						</div>
+						<a href="javascript:void(0)" class="modal_close" @click="hidePop('gameHistory')">X</a>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- <pop-box v-show="directRules"   :title="langItem.ranking.share_title" :message="langItem.ranking.share_rule"></pop-box>
+			<pop-box v-show="smallRules"    :title="langItem.ranking.group_title" :message="langItem.ranking.group_rule"></pop-box> -->
+			<!-- <pop-box v-show="seasonRules"   :title="langItem.ranking.buy_title"   :message="langItem.ranking.season_rule"></pop-box> -->
+			<pop-box v-show="countError"    :title="langItem.com.tip" :message="langItem.com.count_error"></pop-box>
+			<pop-box v-show="sendError"     :title="langItem.com.tip" :message="langItem.com.send_error"></pop-box>
+			<!--<pop-box v-show="lotteryError"  :title="langItem.com.tip" :message="langItem.com.lotteryError"></pop-box>-->
+			<pop-box v-show="copySuccess"   :title="langItem.com.tip" :message="langItem.com.copySuccess"></pop-box>
+			<pop-box v-show="balanceError"  :title="langItem.com.tip" :message="langItem.com.balanceError"></pop-box>
+			<pop-box v-show="canPlay"       :title="langItem.com.tip" :message="langItem.game.canPlay"></pop-box>
+			<pop-box v-show="sdfBalanceError"  :title="langItem.com.tip" :message="langItem.com.sdfBalanceError"></pop-box>
+			
+			<pop-lotto v-show="lotteryError"  :title="langItem.com.tip" :message="langItem.com.lotteryError" :codes="lotteryCount"></pop-lotto>
+		</div>
+		<script type="text/javascript " src="js/app.js"></script>
+	</body>
+
+</html>
